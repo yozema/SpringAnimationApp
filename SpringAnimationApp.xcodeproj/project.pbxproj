@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		9C416B5B29C35545004ACE29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C416B5A29C35545004ACE29 /* AppDelegate.swift */; };
 		9C416B5D29C35545004ACE29 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C416B5C29C35545004ACE29 /* SceneDelegate.swift */; };
-		9C416B5F29C35545004ACE29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C416B5E29C35545004ACE29 /* ViewController.swift */; };
+		9C416B5F29C35545004ACE29 /* SpringAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C416B5E29C35545004ACE29 /* SpringAnimationViewController.swift */; };
 		9C416B6229C35545004ACE29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C416B6029C35545004ACE29 /* Main.storyboard */; };
 		9C416B6429C35547004ACE29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C416B6329C35547004ACE29 /* Assets.xcassets */; };
 		9C416B6729C35547004ACE29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C416B6529C35547004ACE29 /* LaunchScreen.storyboard */; };
-		9C416B6F29C3557B004ACE29 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C416B6E29C3557B004ACE29 /* DataManager.swift */; };
+		9C416B6F29C3557B004ACE29 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C416B6E29C3557B004ACE29 /* DataSource.swift */; };
 		9C416B7129C35592004ACE29 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C416B7029C35592004ACE29 /* Animation.swift */; };
 		9C416B7A29C35757004ACE29 /* SpringAnimation in Frameworks */ = {isa = PBXBuildFile; productRef = 9C416B7929C35757004ACE29 /* SpringAnimation */; };
 /* End PBXBuildFile section */
@@ -22,12 +22,12 @@
 		9C416B5729C35545004ACE29 /* SpringAnimationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpringAnimationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C416B5A29C35545004ACE29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C416B5C29C35545004ACE29 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9C416B5E29C35545004ACE29 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9C416B5E29C35545004ACE29 /* SpringAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringAnimationViewController.swift; sourceTree = "<group>"; };
 		9C416B6129C35545004ACE29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9C416B6329C35547004ACE29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C416B6629C35547004ACE29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C416B6829C35547004ACE29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9C416B6E29C3557B004ACE29 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		9C416B6E29C3557B004ACE29 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		9C416B7029C35592004ACE29 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,7 +110,7 @@
 		9C416B7629C35601004ACE29 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				9C416B6E29C3557B004ACE29 /* DataManager.swift */,
+				9C416B6E29C3557B004ACE29 /* DataSource.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -118,7 +118,7 @@
 		9C416B7729C3560E004ACE29 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				9C416B5E29C35545004ACE29 /* ViewController.swift */,
+				9C416B5E29C35545004ACE29 /* SpringAnimationViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -200,8 +200,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C416B5F29C35545004ACE29 /* ViewController.swift in Sources */,
-				9C416B6F29C3557B004ACE29 /* DataManager.swift in Sources */,
+				9C416B5F29C35545004ACE29 /* SpringAnimationViewController.swift in Sources */,
+				9C416B6F29C3557B004ACE29 /* DataSource.swift in Sources */,
 				9C416B5B29C35545004ACE29 /* AppDelegate.swift in Sources */,
 				9C416B7129C35592004ACE29 /* Animation.swift in Sources */,
 				9C416B5D29C35545004ACE29 /* SceneDelegate.swift in Sources */,
