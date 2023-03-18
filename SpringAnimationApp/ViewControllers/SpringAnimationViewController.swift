@@ -17,13 +17,7 @@ final class SpringAnimationViewController: UIViewController {
     
     // MARK: -IBOutlets
     @IBOutlet var springAnimationView: SpringView!
-    
-    @IBOutlet var presetLabel: UILabel!
-    @IBOutlet var curveLabel: UILabel!
-    @IBOutlet var forceLabel: UILabel!
-    @IBOutlet var durationLabel: UILabel!
-    @IBOutlet var delayLabel: UILabel!
-    
+    @IBOutlet var animationLabel: UILabel!
     @IBOutlet var runButton: UIButton!
     
     private var animations: [Animation] = []
@@ -65,11 +59,13 @@ final class SpringAnimationViewController: UIViewController {
     }
     
     private func setAnimationDescription() {
-        presetLabel.text = "Preset: \(animations[animationIndex].preset)"
-        curveLabel.text = "Curve: \(animations[animationIndex].curve)"
-        forceLabel.text = "Force: \(String(format: "%.2f", animations[animationIndex].force))"
-        durationLabel.text = "Duration: \(String(format: "%.2f", animations[animationIndex].duration))"
-        delayLabel.text = "Delay: \(String(format: "%.2f", animations[animationIndex].delay))"
+        animationLabel.text = """
+                            Preset: \(animations[animationIndex].preset)
+                            Curve: \(animations[animationIndex].curve)
+                            Force: \(String(format: "%.2f", animations[animationIndex].force))
+                            Duration: \(String(format: "%.2f", animations[animationIndex].duration))
+                            Delay: \(String(format: "%.2f", animations[animationIndex].delay))
+                            """
     }
     
     private func setAnimationParameters() {
