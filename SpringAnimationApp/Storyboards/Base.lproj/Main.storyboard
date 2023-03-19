@@ -54,7 +54,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="runButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="a6y-vw-BJu"/>
+                                    <action selector="runButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UOT-IE-9X2"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -71,7 +71,6 @@
                     </view>
                     <connections>
                         <outlet property="animationLabel" destination="Llw-I9-x7t" id="RQf-FR-294"/>
-                        <outlet property="runButton" destination="8wL-wa-svR" id="iLD-DG-TjZ"/>
                         <outlet property="springAnimationView" destination="I5w-og-Eq7" id="nk9-uo-drr"/>
                     </connections>
                 </viewController>
